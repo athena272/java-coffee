@@ -1,9 +1,12 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
+import java.util.Arrays;
 /**
- * DesafioMaiorMenor02
+ * Versao001
  */
-public class DesafioMaiorMenor02 {
+public class Versao001 {
+
+
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int numero[] = new int[3];
@@ -20,7 +23,5 @@ public class DesafioMaiorMenor02 {
         System.out.println("O menor número é: " + numero[0]);
         System.out.println("O número intermediário é: " + numero[1]);
         System.out.println("O maior número é: " + numero[2]);
-        
     }
-    
 }
