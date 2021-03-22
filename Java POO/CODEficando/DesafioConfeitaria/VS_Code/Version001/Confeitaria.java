@@ -1,15 +1,11 @@
-package confeitaria;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 /**
- *
- * @author guilh
+ * Confeitaria
  */
 public class Confeitaria {
-
     public static void main(String[] args) {
         //Criar uma entrada de dados
         Scanner teclado = new Scanner(System.in);
@@ -89,8 +85,7 @@ public class Confeitaria {
             
         
         } while(escolha != 0);   
-        System.out.println("OBRIGADO PELA PREFERÊNCIA, VOLTE SEMPRE!!!");
-       
-    }   
+        System.out.println("OBRIGADO PELA PREFERÊNCIA, VOLTE SEMPRE!!!");        
+    }
     
 }
