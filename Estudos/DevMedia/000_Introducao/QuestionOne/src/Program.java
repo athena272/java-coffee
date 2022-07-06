@@ -8,11 +8,12 @@ public class Program
 
         System.out.print("Digite a senha: ");
         String passwd = teclado.next();
+        System.out.println("Senha valida?: " + checkPasswd(passwd));
 
 
     }
 
-    public boolean checkPasswd(String senha)
+    public static boolean checkPasswd(String senha)
     {
         boolean isValide = true;
         if(senha.length() > 6)
@@ -24,27 +25,30 @@ public class Program
         {
             isValide = false;
         }
-        else if ()
+        else if (!estaCrescente(senha))
         {
-
+            isValide = false;
         }
         return  isValide;
     }
 
-    public boolean estaCrescente(String numeros)
+    public static boolean estaCrescente(String numeros)
     {
         int posicao = 0;
 
-        while (posicao < numeros.length())
+        while (posicao < (numeros.length() - 1))
         {
             char num = numeros.charAt(posicao);
+            char nextNum = numeros.charAt(posicao + 1);
 
-            if (Integer.parseInt(String.valueOf(num)) > '-') {
-                break;
+            if (num > nextNum)
+            {
+                return false;
             }
-
             posicao++;
         }
+
+        return true;
     }
 }
 
