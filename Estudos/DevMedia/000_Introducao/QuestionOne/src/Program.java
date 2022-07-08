@@ -16,7 +16,7 @@ public class Program
     public static boolean checkPasswd(String senha)
     {
         boolean isValide = true;
-        if(senha.length() > 6)
+        if(senha.length() == 6)
         {
             isValide = false;
         }
