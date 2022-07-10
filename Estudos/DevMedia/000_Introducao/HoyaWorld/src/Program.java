@@ -7,6 +7,9 @@ public class Program
 
         WeekDays day = new WeekDays();
         System.out.println(day.dayWeek());
+
+
+
     }
 
 }
