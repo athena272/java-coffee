@@ -4,6 +4,14 @@ public class Livro {
     private double valor;
     private String isbn;
     private Autor autor;
+    //Constructor
+    public Livro(Autor autor){
+        this();
+        this.autor = autor;
+    }
+    public Livro() {
+        this.isbn = "000-00-00000-00-0";
+    }
     //My Methods
     void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do livro");
