@@ -1,9 +1,9 @@
 public class Livro {
-    String nome;
-    String descricao;
-    double valor;
-    String isbn;
-    Autor autor;
+    private String nome;
+    private String descricao;
+    private double valor;
+    private String isbn;
+    private Autor autor;
     //My Methods
     void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do livro");
@@ -11,12 +11,23 @@ public class Livro {
         System.out.println("Descrição: " + this.descricao);
         System.out.println("Valor: " + this.valor);
         System.out.println("ISBN: " + this.isbn);
-        this.autor.mostrarDetalhes();
+        if(this.temAutor()) {
+            this.autor.mostrarDetalhes();
+        }
         System.out.println("--");
     }
 
+    public boolean aplicaDescontoDe(double porcentagem) {
+        if(porcentagem > 0.3) {
+            return false;
+        }
+        this.valor -= this.valor * porcentagem;
+        return true;
+    }
 
-
+    public boolean temAutor() {
+        return this.autor != null;
+    }
     //Getters and Setters
     public String getNome() {
         return nome;
@@ -49,4 +60,13 @@ public class Livro {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+
+    public Autor getAutor() {
+        return autor;
+    }
+
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+
 }
