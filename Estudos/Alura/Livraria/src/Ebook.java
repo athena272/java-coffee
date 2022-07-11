@@ -10,9 +10,9 @@ public class Ebook extends Livro{
         if(porcentagem > 0.15) {
             return false;
         }
-        double desconto = this.getValor() * porcentagem;
-        this.setValor(this.getValor() - desconto);
-        return true;
+        //double desconto = this.getValor() * porcentagem;
+        //this.setValor(this.getValor() - desconto);
+        return super.aplicaDescontoDe(porcentagem);
     }
     //Getters and Setters
     public String getWaterMark() {
