@@ -2,7 +2,6 @@ public class Autor {
     private String nome;
     private String email;
     private String cpf;
-
     void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do Autor");
         System.out.println("Nome: " + this.nome);
