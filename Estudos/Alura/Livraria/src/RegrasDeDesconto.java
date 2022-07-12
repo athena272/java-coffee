@@ -3,8 +3,8 @@ public class RegrasDeDesconto {
         Autor autor = new Autor();
         autor.setNome("Rodrigo Turini");
 
-        LivroFisico livro = new LivroFisico(autor);
-        livro.setValor(59.90);
+        Livro livro = new MiniLivro(autor);
+        livro.setValor(39.90);
 
         if(!livro.aplicaDescontoDe(0.3)){
             System.out.println("Desconto não pode ser maior que 30%");
