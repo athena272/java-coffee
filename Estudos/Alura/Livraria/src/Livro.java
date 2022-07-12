@@ -1,4 +1,4 @@
-public abstract class Livro {
+public abstract class Livro implements Produto{
     private String nome;
     private String descricao;
     private double valor;
@@ -25,14 +25,7 @@ public abstract class Livro {
         System.out.println("--");
     }
 
-    public boolean aplicaDescontoDe(double porcentagem) {
-        if(porcentagem > 0.3) {
-            return false;
-        }
-        System.out.println("Aplicando desconto no Livro");
-        this.valor -= this.valor * porcentagem;
-        return true;
-    }
+    //Abstract method with interface
 
     public boolean temAutor() {
         return this.autor != null;
