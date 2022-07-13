@@ -1,3 +1,7 @@
+package br.com.casadocodigo.livraria.produtos;
+
+import br.com.casadocodigo.livraria.produtos.Produto;
+
 public class CarrinhoDeCompra {
     private double total;
     public void adiciona(Produto produto) {

@@ -1,3 +1,7 @@
+package br.com.casadocodigo.livraria.produtos;
+
+import br.com.casadocodigo.livraria.Autor;
+
 public abstract class Livro implements Produto{
     private String nome;
     private String descricao;
