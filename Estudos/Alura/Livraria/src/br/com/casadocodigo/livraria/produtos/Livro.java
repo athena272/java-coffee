@@ -17,7 +17,7 @@ public abstract class Livro implements Produto{
         this.isbn = "000-00-00000-00-0";
     }
     //My Methods
-    void mostrarDetalhes() {
+    public void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do livro");
         System.out.println("Nome: " + this.nome);
         System.out.println("Descrição: " + this.descricao);
