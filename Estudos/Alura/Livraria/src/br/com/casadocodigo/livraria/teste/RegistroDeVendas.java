@@ -1,6 +1,7 @@
 package br.com.casadocodigo.livraria.teste;
 
 import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.CarrinhoDeCompra;
 import br.com.casadocodigo.livraria.produtos.Ebook;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
 
