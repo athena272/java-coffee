@@ -4,7 +4,7 @@ public class Autor {
     private String nome;
     private String email;
     private String cpf;
-    void mostrarDetalhes() {
+    public void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do br.com.casadocodigo.livraria.Autor");
         System.out.println("Nome: " + this.nome);
         System.out.println("Email: " + this.email);
