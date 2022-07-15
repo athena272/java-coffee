@@ -30,7 +30,7 @@ public class RegistroDeVendas {
 
         Produto[] produtos = carrinhoDeCompra.getProdutos();
         for(Produto produto : produtos) {
-
+            System.out.println(produto.getValor());
         }
     }
 }
