@@ -4,6 +4,7 @@ import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.CarrinhoDeCompra;
 import br.com.casadocodigo.livraria.produtos.Ebook;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.Produto;
 
 public class RegistroDeVendas {
     public static void main(String[] args) {
@@ -25,6 +26,11 @@ public class RegistroDeVendas {
 
         if(livroFisico.aplicaDescontoDe10Porcento()) {
             System.out.println("Valor agora é: " + livroFisico.getValor());
+        }
+
+        Produto[] produtos = carrinhoDeCompra.getProdutos();
+        for(Produto produto : produtos) {
+
         }
     }
 }
