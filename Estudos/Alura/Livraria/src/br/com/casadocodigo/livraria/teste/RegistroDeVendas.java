@@ -38,6 +38,7 @@ public class RegistroDeVendas {
             }
             catch (Exception e) {
                 System.out.println("Deu exception no índice: " +  i);
+                e.printStackTrace();
             }
         }
         System.out.println("Fui executado!");
