@@ -19,18 +19,21 @@ public class RegistroDeVendas {
         ebook.setNome("Test-Driven Development");
         ebook.setValor(29.90);
 
+        if(livroFisico.aplicaDescontoDe10Porcento()) {
+            System.out.println("Valor agora é: " + livroFisico.getValor());
+        }
+
         CarrinhoDeCompra carrinhoDeCompra = new CarrinhoDeCompra();
         carrinhoDeCompra.adiciona(livroFisico);
         carrinhoDeCompra.adiciona(ebook);
         System.out.println("Total: " + carrinhoDeCompra.getTotal());
 
-        if(livroFisico.aplicaDescontoDe10Porcento()) {
-            System.out.println("Valor agora é: " + livroFisico.getValor());
-        }
-
         Produto[] produtos = carrinhoDeCompra.getProdutos();
-        for(Produto produto : produtos) {
-            System.out.println(produto.getValor());
+        for(int i = 0; i <= produtos.length; i++) {
+            Produto produto = produtos[i];
+            if(produto != null) {
+                System.out.println(produto.getValor());
+            }
         }
     }
 }
