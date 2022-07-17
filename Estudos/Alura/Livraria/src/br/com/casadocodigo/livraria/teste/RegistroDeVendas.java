@@ -29,17 +29,8 @@ public class RegistroDeVendas {
         System.out.println("Total: " + carrinhoDeCompra.getTotal());
 
         Produto[] produtos = carrinhoDeCompra.getProdutos();
-        for(int i = 0; i <= produtos.length; i++) {
-            try {
-                Produto produto = produtos[i];
-                if(produto != null) {
-                    System.out.println(produto.getValor());
-                }
-            }
-            catch (Exception e) {
-                System.out.println("Deu exception no índice: " +  i);
-                e.printStackTrace();
-            }
+        for(Produto produto : produtos) {
+            System.out.println(produto.getValor());
         }
         System.out.println("Fui executado!");
     }
