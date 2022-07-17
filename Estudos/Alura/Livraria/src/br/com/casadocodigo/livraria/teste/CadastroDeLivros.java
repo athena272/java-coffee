@@ -10,6 +10,11 @@ public class CadastroDeLivros {
         autor.setEmail("rodrigo@gmail.com");
         autor.setCpf("XXX.XXX.XXX.XX");
 
+        Autor outroAutor = new Autor();
+        outroAutor.setNome("Paulo Silveira");
+        outroAutor.setEmail("paulo@gmail.com");
+        outroAutor.setCpf("YYY.YYY.YYY.YY");
+
         LivroFisico livro = new LivroFisico(autor);
         livro.setNome("Java 8 Prático");
         livro.setDescricao("Novos recursos da linguagem");
@@ -17,11 +22,6 @@ public class CadastroDeLivros {
         livro.setIsbn("978-85-66250-46-6");
 
         livro.mostrarDetalhes();
-
-        Autor outroAutor = new Autor();
-        outroAutor.setNome("Paulo Silveira");
-        outroAutor.setEmail("paulo@gmail.com");
-        outroAutor.setCpf("YYY.YYY.YYY.YY");
 
         LivroFisico outroLivro = new LivroFisico(outroAutor);
         outroLivro.setNome("Lógica de Programação");
