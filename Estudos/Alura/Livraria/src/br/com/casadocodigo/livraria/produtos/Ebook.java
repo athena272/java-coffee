@@ -31,4 +31,15 @@ public class Ebook extends Livro implements Promocional{
     public void setWaterMark(String waterMark) {
         this.waterMark = waterMark;
     }
+
+    @Override
+    public int compareTo(Produto outro) {
+        if(this.getValor() < outro.getValor()) {
+            return -1;
+        }
+        if(this.getValor() > outro.getValor()) {
+            return 1;
+        }
+        return 0;
+    }
 }
