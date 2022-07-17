@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class CarrinhoDeCompra {
     private double total;
     private ArrayList<Produto> produtos;
-    private int contador = 0;
     public CarrinhoDeCompra() {
         this.produtos = new ArrayList<>();
     }
