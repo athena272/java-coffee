@@ -19,6 +19,10 @@ public class Ebook extends Livro implements Promocional{
         System.out.println("Aplicando desconto no br.com.casadocodigo.livraria.produtos.LivroFisico");
         return true;
     }
+    @Override
+    public String toString() {
+        return "Eu sou um ebook";
+    }
     //Getters and Setters
     public String getWaterMark() {
         return waterMark;
