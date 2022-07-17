@@ -6,6 +6,8 @@ import br.com.casadocodigo.livraria.produtos.Ebook;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
 import br.com.casadocodigo.livraria.produtos.Produto;
 
+import java.util.List;
+
 public class RegistroDeVendas {
     public static void main(String[] args) {
         Autor autor = new Autor();
@@ -28,7 +30,7 @@ public class RegistroDeVendas {
         carrinhoDeCompra.adiciona(ebook);
         System.out.println("Total: " + carrinhoDeCompra.getTotal());
 
-        Produto[] produtos = carrinhoDeCompra.getProdutos();
+        List<Produto> produtos = carrinhoDeCompra.getProdutos();
         for(Produto produto : produtos) {
             System.out.println(produto.getValor());
         }
