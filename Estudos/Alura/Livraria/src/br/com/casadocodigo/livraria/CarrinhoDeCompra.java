@@ -20,7 +20,7 @@ public class CarrinhoDeCompra {
     public double getTotal() {
         return this.total;
     }
-    public ArrayList<Produto> getProdutos() {
+    public List<Produto> getProdutos() {
         return this.produtos;
     }
 
