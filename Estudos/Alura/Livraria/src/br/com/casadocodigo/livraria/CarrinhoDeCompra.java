@@ -8,7 +8,7 @@ public class CarrinhoDeCompra {
     private double total;
     private List<Produto> produtos;
     public CarrinhoDeCompra() {
-        this.produtos = new ArrayList<Produto>();
+        this.produtos = new List<Produto>();
     }
     public void adiciona(Produto produto) {
         this.produtos.add(produto);
