@@ -10,7 +10,12 @@ public class Autor {
         System.out.println("Email: " + this.email);
         System.out.println("CPF: " + this.cpf);
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        Autor outroAutor = (Autor) obj;
+        return this.nome.equals(outroAutor.nome);
+    }
+    //Gettes and Setters
     public String getNome() {
         return nome;
     }
