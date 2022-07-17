@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class CarrinhoDeCompra {
     private double total;
-    private ArrayList<Produto> produtos;
+    private List<Produto> produtos;
     public CarrinhoDeCompra() {
-        this.produtos = new ArrayList<>();
+        this.produtos = new ArrayList<Produto>();
     }
     public void adiciona(Produto produto) {
         this.produtos.add(produto);
@@ -18,10 +18,10 @@ public class CarrinhoDeCompra {
     }
 
     public double getTotal() {
-        return total;
+        return this.total;
     }
     public ArrayList<Produto> getProdutos() {
-        return produtos;
+        return this.produtos;
     }
 
 }
