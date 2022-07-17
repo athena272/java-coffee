@@ -8,8 +8,8 @@ public class CarrinhoDeCompra {
     private int contador = 0;
     public void adiciona(Produto produto) {
         System.out.println("Adicionando: " + produto);
-        this.produtos[contador] = produto;
-        contador++;
+        this.produtos[this.contador] = produto;
+        this.contador++;
         this.total += produto.getValor();
     }
 
