@@ -7,6 +7,7 @@ import br.com.casadocodigo.livraria.produtos.Produto;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class OrdenandoComJava {
@@ -28,5 +29,12 @@ public class OrdenandoComJava {
         for(Produto produto : produtos) {
             System.out.println(produto.getValor());
         }
+        HashSet<String> set = new HashSet<String>();
+        set.add("Não há repitição");
+        set.add("Não há repitição");
+        set.add("Não há repitição");
+        set.add("Não há repitição");
+        set.add("Não há repitição");
+        System.out.println(set.size());
     }
 }
