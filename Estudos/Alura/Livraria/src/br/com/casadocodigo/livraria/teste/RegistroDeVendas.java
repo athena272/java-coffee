@@ -34,6 +34,7 @@ public class RegistroDeVendas {
         for(Produto produto : produtos) {
             System.out.println(produto.getValor());
         }
+
         System.out.println("Fui executado!");
     }
 }

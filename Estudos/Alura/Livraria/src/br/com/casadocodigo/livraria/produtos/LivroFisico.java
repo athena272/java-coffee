@@ -1,8 +1,11 @@
 package br.com.casadocodigo.livraria.produtos;
 
 import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.produtos.Produto;
+import br.com.casadocodigo.livraria.produtos.Promocional;
+import br.com.casadocodigo.livraria.produtos.Livro;
 
-public class LivroFisico extends Livro implements Promocional{
+public class LivroFisico extends Livro implements Promocional {
     public LivroFisico(Autor autor) {
         super(autor);
     }
@@ -18,15 +21,5 @@ public class LivroFisico extends Livro implements Promocional{
         this.setValor(this.getValor() - desconto);
         System.out.println("Aplicando desconto no br.com.casadocodigo.livraria.produtos.LivroFisico");
         return true;
-    }
-    @Override
-    public int compareTo(Produto outro) {
-        if(this.getValor() < outro.getValor()) {
-            return -1;
-        }
-        if(this.getValor() > outro.getValor()) {
-            return 1;
-        }
-        return 0;
     }
 }

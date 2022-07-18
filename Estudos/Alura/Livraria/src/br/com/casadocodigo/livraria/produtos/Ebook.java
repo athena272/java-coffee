@@ -2,7 +2,7 @@ package br.com.casadocodigo.livraria.produtos;
 
 import br.com.casadocodigo.livraria.Autor;
 
-public class Ebook extends Livro implements Promocional{
+public class Ebook extends Livro implements Promocional {
     private String waterMark;
 
     public Ebook(Autor autor) {
@@ -32,14 +32,4 @@ public class Ebook extends Livro implements Promocional{
         this.waterMark = waterMark;
     }
 
-    @Override
-    public int compareTo(Produto outro) {
-        if(this.getValor() < outro.getValor()) {
-            return -1;
-        }
-        if(this.getValor() > outro.getValor()) {
-            return 1;
-        }
-        return 0;
-    }
 }

@@ -2,8 +2,9 @@ package br.com.casadocodigo.livraria.produtos;
 
 import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.exception.AutorNuloException;
+import br.com.casadocodigo.livraria.produtos.Produto;
 
-public abstract class Livro implements Produto{
+public abstract class Livro implements Produto {
     private String nome;
     private String descricao;
     private double valor;
@@ -21,7 +22,7 @@ public abstract class Livro implements Produto{
 
     }
     //My Methods
-    public void mostrarDetalhes() {
+     public void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do livro");
         System.out.println("Nome: " + this.nome);
         System.out.println("Descrição: " + this.descricao);
@@ -34,7 +35,16 @@ public abstract class Livro implements Produto{
     }
 
     //Abstract method with interface
-
+    @Override
+    public int compareTo(Produto outro) {
+        if(this.getValor() < outro.getValor()) {
+            return -1;
+        }
+        if(this.getValor() >  outro.getValor()) {
+            return 1;
+        }
+        return 0;
+    }
     public boolean temAutor() {
         return this.autor != null;
     }
