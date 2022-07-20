@@ -8,7 +8,7 @@ public class Program
 
         System.out.print("Digite a senha: ");
         String passwd = teclado.next();
-        System.out.println("Senha valida?: " + checkPasswd(passwd));
+        System.out.println("Senha válida?: " + checkPasswd(passwd));
 
 
     }
@@ -16,7 +16,8 @@ public class Program
     public static boolean checkPasswd(String senha)
     {
         boolean isValide = true;
-        if(senha.length() == 6)
+
+        if(senha.length() != 6)
         {
             isValide = false;
         }
