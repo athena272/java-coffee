@@ -5,8 +5,7 @@ public class Program
         HoyaWorld hoyaWorld = new HoyaWorld();
         hoyaWorld.sayHello();
 
-        WeekDays day = new WeekDays();
-        System.out.println(day.dayWeek());
+
 
 
 
