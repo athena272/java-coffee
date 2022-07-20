@@ -1,17 +1,19 @@
 package br.com.casadocodigo.livraria;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class GerenciadorDeCupons {
-    private Set<String> cupons;
+    private Map<String, Double> cupons;
     public GerenciadorDeCupons() {
-        this.cupons = new HashSet<String>();
-        cupons.addAll(Arrays.asList("CUP74", "CUP158", "CUP14", "CUP52", "CUP21"));
+        this.cupons = new HashMap<>();
+        cupons.put("CUP74", 10.0);
+        cupons.put("CUP158", 15.00);
+        cupons.put("CUP14", 5.99);
+        cupons.put("CUP52", 20.00);
+        cupons.put("cab11", 10.00);
+
     }
-    public boolean validaCupom(String cupom) {
-        return this.cupons.contains(cupom);
+    public Double validaCupom(String cupom) {
+        return this.cupons.get(cupom);
     }
 }
