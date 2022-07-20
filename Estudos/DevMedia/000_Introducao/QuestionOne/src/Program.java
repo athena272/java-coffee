@@ -36,7 +36,7 @@ public class Program
     {
         int posicao = 0;
 
-        while (posicao < (numeros.length() - 1))
+        while (posicao < (numeros.length() - 2))
         {
             char num = numeros.charAt(posicao);
             char nextNum = numeros.charAt(posicao + 1);
