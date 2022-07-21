@@ -6,9 +6,9 @@ public class Autor {
     private String cpf;
     public void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do br.com.casadocodigo.livraria.Autor");
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Email: " + this.email);
-        System.out.println("CPF: " + this.cpf);
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Email: " + this.getEmail());
+        System.out.println("CPF: " + this.getCpf());
     }
     @Override
     public boolean equals(Object obj) {
