@@ -24,10 +24,10 @@ public abstract class Livro implements Produto {
     //My Methods
      public void mostrarDetalhes() {
         System.out.println("Monstrando detalhes do livro");
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Descrição: " + this.descricao);
-        System.out.println("Valor: " + this.valor);
-        System.out.println("ISBN: " + this.isbn);
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Descrição: " + this.getDescricao());
+        System.out.println("Valor: " + this.getValor());
+        System.out.println("ISBN: " + this.getIsbn());
         if(this.temAutor()) {
             this.autor.mostrarDetalhes();
         }
