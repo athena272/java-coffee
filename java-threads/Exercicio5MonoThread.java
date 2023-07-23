@@ -1,4 +1,3 @@
-
 public class Exercicio5MonoThread {
     public static void main(String[] args) {
         int start = 1;
