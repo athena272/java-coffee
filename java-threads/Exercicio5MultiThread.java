@@ -1,3 +1,4 @@
+
 public class Exercicio5MultiThread {
     private static final int NUM_THREADS = 4;
 

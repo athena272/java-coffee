@@ -1,3 +1,4 @@
+
 public class Exercicio4 {
     private static int valor = 0;
 
